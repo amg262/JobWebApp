@@ -1,0 +1,57 @@
+﻿body {
+    /*font-family: 'Karla', sans-serif;*/
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.hov1:hover {
+    transform: rotate(-10deg);
+}
+
+.hov2:hover {
+    transform: rotate(10deg);
+}
+
+
+.hov1 {
+    background-image: url("../images/hov1.jpg");
+    height: 240px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.hov2 {
+    background-image: url("../images/hov2.jpg");
+    height: 240px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.number-square {
+    position: relative;
+    min-height: 70px;
+}
+
+/*.number-square .number-content {*/
+/*    padding-left: 80px;*/
+/*    padding-top: 1%;*/
+/*}*/
+
+/*.number-square .number {*/
+/*    width: 55px;*/
+/*    height: 55px;*/
+/*    background: #1b76bc;*/
+/*    margin-top: 5px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-size: 30px;*/
+/*    font-weight: bold;*/
+/*    color: #ebf2fa;*/
+/*    position: absolute;*/
+/*    border-radius: 50px;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    box-shadow: 2px 2px 6px black;*/
+/*}*/

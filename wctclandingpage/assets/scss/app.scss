@@ -1,0 +1,171 @@
+$primary: #003e7a;
+$primary2: #0077bf;
+$secondary: #e2edf8;
+
+$tertiary2: #ffde74;
+$tertiary: #ebf2fa;
+$tertiary3: #a5ce39;
+$tertiary4: #00b6bd;
+
+$tertiary5: #6daede;
+
+$border-color: #ebf2fa;
+
+$banner-border: #ebf2fa;
+$btn-font-weight: 600;
+$font-family-base: 'Karla', sans-serif;
+
+$nav-pills-link-active-color: #ffde74;
+
+//$card-height:
+$theme-colors: (
+        "primary2" : $primary2,
+        "secondary":$secondary,
+        "tertiary": $tertiary,
+        "tertiary2": $tertiary2,
+        "tertiary3":$tertiary3,
+        "tertiary4":$tertiary4,
+        "tertiary5":$tertiary5,
+        "banner-border":$banner-border,
+);
+
+@import "boostrap/bootstrap";
+
+
+.info-head {
+  color: $primary
+}
+
+
+.nav-link.active.tab-head {
+  font-weight: 700;
+  color: $tertiary2;
+  background-color: $primary;
+  border-radius: 20px 20px 0 0;
+}
+
+.tab-head.card-head {
+  font-size: 20px;
+}
+
+.hov-text {
+  color: white;
+  margin-top: 30%;
+}
+
+.card-header {
+  background-color: $secondary;
+}
+
+.btn {
+  border-radius: 10px;
+  color: $primary;
+}
+
+#pills-tabContent {
+  border-top: 4px $primary solid;
+}
+
+#pills-tab li a {
+  font-weight: 600;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 2px 0 5px #686868;
+
+}
+
+#pills-tab li a.active:hover {
+  color: $tertiary2;
+  border-radius: 20px 20px 0 0;
+}
+
+#pills-tab li a:hover {
+  color: $primary2;
+  border-radius: 20px 20px 0 0;
+
+}
+
+#alt-back {
+  background-color: $secondary;
+}
+
+.card {
+  border: 2px solid #d3dbe3;
+  border-radius: 10px;
+}
+
+footer label {
+  color: $secondary;
+  font-size: 20px;
+}
+
+#top-nav {
+  box-shadow: -2px 5px 5px #002b54;
+  z-index: 99;
+}
+
+a.btn, .btn-tertiary2 {
+  box-shadow: 2px 2px 2px #666666;
+}
+
+.number-square .number-content {
+  padding-left: 80px;
+  padding-top: 1%;
+}
+
+.number-square .number {
+  width: 55px;
+  height: 55px;
+  background: #1b76bc;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFDE74FF;
+  position: absolute;
+  border-radius: 50px;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 2px 6px black;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.btn.btn-tertiary2.custom-button {
+  background-color: Transparent;
+  border-color: $primary;
+  box-shadow: $primary;
+}
+
+.btn-outline-tertiary2, .btn-outline-tertiary2 a {
+  color: $tertiary2;
+  padding: 10px 10px;
+}
+
+.btn-outline-tertiary2, .btn-outline-tertiary2 a:hover {
+  color: $primary;
+  font-weight: 100;
+}
+.btn.btn-tertiary2.custom-button.readmore {
+  background-color: Transparent;
+  border-color: #e2edf8 !important;
+  box-shadow: $primary;
+}
+.readmore a {
+  border-color: #e2edf8 !important;
+
+}
+
+.btn-outline-tertiary2, .btn-outline-tertiary2.readmore a {
+  color: $secondary;
+  padding: 10px 10px;
+}
+
+.btn-outline-tertiary2, .btn-outline-tertiary2.readmore a:hover {
+  color: $primary;
+  font-weight: 100;
+}

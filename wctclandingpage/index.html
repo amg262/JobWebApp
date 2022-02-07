@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width" name="viewport">
+    <title>WCTC Program</title>
+    <link href="assets/dist/css/client.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary navbar-expand-md" id="top-nav">
+    <a class="navbar-brand" href="#"><i class="fas fa-book"></i>&nbsp;&nbsp;WCTC Baking</a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="https://catalog.wctc.edu/programs/baking-pastry-production"
+                   id="productDropdown" role="button">
+                    <i class="fas fa-utensils"></i>
+                </a>
+                <div aria-labelledby="productDropdown" class="dropdown-menu">
+                    <a class="dropdown-item"
+                       href="https://www.wctc.edu/academics/programs-courses/programs/baking-and-pastry-management/index.php"><i
+                            class="fas fa-cookie"></i>
+                        Pastry
+                    </a>
+                    <a class="dropdown-item"
+                       href="https://www.wctc.edu/academics/programs-courses/programs/culinary-management/index.php"><i
+                            class="fas fa-hotdog"></i>Food</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline ml-auto d-none d-md-block">
+            <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search Programs" type="search">
+            <button class="btn btn-danger my-2 my-sm-0" type="submit"><i class="fas fa-search"></i><span
+                    class="sr-only"> Search</span></button>
+        </form>
+    </div>
+</nav>
+<!-- container -->
+<div class="container-fluid">
+    <div class="carousel slide " data-ride="carousel" id="carouselExampleCaptions">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#carouselExampleCaptions"></li>
+            <li data-slide-to="1" data-target="#carouselExampleCaptions"></li>
+            <li data-slide-to="2" data-target="#carouselExampleCaptions"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="..." class="d-block w-100" src="/assets/dist/images/baking-pastry-management-masks-bl.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Baking & Pastry Production</h1>
+                    <p>Learn to prepare specialty breads, desserts and pastries, and refine techniques in cake
+                        production and decorating.</p>
+                    <br>
+                    <button class="btn btn-outline-tertiary2"><a href="#">Apply Now</a></button>
+                    <button class="btn btn-outline-tertiary2 readmore" style="border-color:#e2edf8;"><a class="readmore" href="#">Read More</a></button>
+                    <br>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="/assets/dist/images/baking-pastry-production-mask-bl.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="thead-light">Baking & Pastry Management</h1>
+                    <p>Develop management skills and expand techniques of production, cost and staff control in the
+                        operation of a bakeshop.</p>
+                    <br>
+                    <button class="btn btn-outline-tertiary2"><a href="#">Apply Now</a></button>
+                    <button class="btn btn-outline-tertiary2 readmore" style="border-color:#e2edf8;"><a class="readmore" href="#">Read More</a></button>
+                    <br>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="/assets/dist/images/food-service-production-bl.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Food Service Production</h1>
+                    <p>Develop proper cooking methods and learn techniques for hot and cold food preparation, baking and
+                        garde manger.</p>
+                    <br>
+                    <button class="btn btn-outline-tertiary2"><a href="#">Apply Now</a></button>
+                    <button class="btn btn-outline-tertiary2 readmore" style="border-color:#e2edf8;"><a class="readmore" href="#">Read More</a></button>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-slide="prev" data-target="#carouselExampleCaptions" type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-slide="next" data-target="#carouselExampleCaptions" type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Academics</a></li>
+                    <li class="breadcrumb-item"><a href="#">Programs and Courses</a></li>
+                    <li class="breadcrumb-item"><a href="#">Program List</a></li>
+                    <li aria-current="page" class="breadcrumb-item active">Baking and Pastry Production</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row bg-banner-border">
+        <div class="col"></div>
+        <div class="col-lg-4 pt-4 pb-4">
+            <h2 class="">
+                How To Apply
+            </h2>
+            <ul>
+                <li><a href="http://wctc.edu/apply-online" rel="noopener" target="_blank" title="Apply Online">Apply
+                    online</a><span>&nbsp;</span>and pay the $30 application fee.
+                </li>
+                <li>Submit official high school transcript.</li>
+                <li>Complete<span>&nbsp;</span><a href="http://wctc.edu/accuplacer" title="Testing Services">placement
+                    assessment</a>.
+                </li>
+            </ul>
+            <p><strong>Questions on the application process?<span>&nbsp;</span></strong>Visit the&nbsp;<a
+                    href="https://wctc.edu/admissions-cost/enroll/steps-to-apply.php"
+                    title="Steps to Apply">Admissions</a>
+                page or
+                contact an <a class="prog-pop" href="https://wctc.edu//admissions-cost/enroll/admissions-advising.php"
+                              title="Admissions Advising">Admissions
+                    Advisor</a><span>.</span></p>
+        </div>
+
+        <div class="col"></div>
+
+        <div class="col  align-items-center align-self-center">
+            <h2>
+                <strong>
+                    <button class="btn btn-tertiary2 pl-4 pr-4 pt-2 pb-2 btn-lg" type="button">Apply Now</button>
+                </strong>
+            </h2>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row mt-5">
+        <div class="col"></div>
+
+        <div class="col-lg-4">
+            <h3 class="text-primary">What Makes This Program Unique?</h3>
+
+
+            <div class="number-square">
+                <span class="number color1">1</span>
+                <div class="number-content">
+                    <p><span>This program is primarily offered during the evening, four days per week.</span></p>
+                </div>
+            </div>
+
+            <div class="number-square">
+                <span class="number color1">2</span>
+                <div class="number-content">
+                    <p><span>Classes give students extensive hands-on experience (576 lab hours) on a wide array of equipment.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="number-square">
+                <span class="number color1">3</span>
+                <div class="number-content">
+                    <p>Hospitality and Culinary students gain valuable experience at WCTC's training restaurant,<span>&nbsp;</span>
+                        <a href="https://wctc.edu/community/student-provided-services/classic-room-and-classic-bistro.php"
+                           title="The Classic Room and The Classic Bistro">The
+                            Classic Room and The Classic Bistro</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <img alt="whatmakes" height="auto" src="assets/dist/images/whatmakes.jpg" width="100%"/>
+        </div>
+        <div class="col"></div>
+
+        <div class="row m-5">
+            <div class="col"></div>
+            <div class="col"></div>
+
+            <div class="col-lg-3">
+                <div class="card">
+                    <img alt="..." class="card-img-top" src="assets/dist/images/card1.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Baking Management</h5>
+                        <p class="card-text">
+                        <p>Bakers prepare items such as breads, pastries, muffins and other items for general cooking...</p>
+                        <a class="btn btn-tertiary2"
+                           href="https://www.wctc.edu/academics/programs-courses/programs/baking-and-pastry-management/index.php">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img alt="..." class="card-img-top" src="assets/dist/images/baking-pastry.jpg" width="1280">
+                    <div class="card-body">
+                        <h5 class="card-title">Culinary Management</h5>
+                        <p class="card-text">
+                        <p>Devote 1,000-plus lab hours to learn the latest culinary techniques and trends in order
+                            to...</p>
+                        <a class="btn btn-tertiary2"
+                           href="https://www.wctc.edu/academics/programs-courses/programs/baking-and-pastry-management/index.php">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img alt="..." class="card-img-top" src="assets/dist/images/card2.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Service Production</h5>
+                        <p class="card-text">
+                            It takes a well-trained kitchen staff to create a memorable dining experience for
+                            restaurant...
+                        </p>
+                        <a class="btn btn-tertiary2"
+                           href="https://www.wctc.edu/academics/programs-courses/programs/food-service-production/index.php">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="row alt-back mb-5 pt-5 pb-3 h-50" id="alt-back">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col-lg-4">
+            <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a aria-controls="pills-home" aria-selected="true" class="nav-link active" data-toggle="pill"
+                       href="#pills-home"
+                       id="pills-home-tab" role="tab">Overview</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a aria-controls="pills-profile" aria-selected="false" class="nav-link" data-toggle="pill"
+                       href="#pills-profile"
+                       id="pills-profile-tab" role="tab">Deadlines</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a aria-controls="pills-contact" aria-selected="false" class="nav-link" data-toggle="pill"
+                       href="#pills-contact"
+                       id="pills-contact-tab" role="tab">Cost</a>
+                </li>
+            </ul>
+            <div class="tab-content pt-3" id="pills-tabContent">
+                <div aria-labelledby="pills-home-tab" class="tab-pane fade show active" id="pills-home"
+                     role="tabpanel">
+                    <h4>Variety</h4>
+                    <p>Professional bakers possess the skills and creativity necessary to prepare everything from
+                        artisan breads, pastries, muffins and other items for general sale or specialty
+                        orders decadent desserts. Focus on baking concepts, principles and techniques, and devote</p>
+                    <h4>Hands-on</h4>
+                    <p>More than 500 hours to lab course time gaining hands-on practice. Learn to prepare specialty
+                        breads,
+                        desserts and pastries, and refine techniques in cake production and decorating.</p>
+
+                </div>
+                <div aria-labelledby="pills-profile-tab" class="tab-pane fade" id="pills-profile" role="tabpanel">
+                    <h3>Fall 2022 Start</h3>
+                    <ul>
+                        <li>Submit application by June 13, 2022</li>
+                        <li>Complete checklist items by August 8, 2022</li>
+                    </ul>
+
+                    <h3>Spring 2022 Start</h3>
+                    <ul>
+                        <li>This program cannot be started in spring.</li>
+                    </ul>
+                    <h3>Summer 2022 Start</h3>
+                    <ul>
+                        <li>This program cannot be started in summer.</li>
+                    </ul>
+                </div>
+                <div aria-labelledby="pills-contact-tab" class="tab-pane fade" id="pills-contact" role="tabpanel">
+                    <p tabindex="-1">The cost of your degree depends on a number of factors, including where you
+                        live,
+                        how your program is delivered, how long it takes to finish your program and the financial
+                        aid you receive. <span tabindex="-1">Explore current </span><a href="#"
+                                                                                       tabindex="-1">tuition
+                            and fees</a><span tabindex="-1">.</span></p>
+                    <h3 tabindex="-1"><span tabindex="-1">Additional Estimated Costs</span></h3>
+                    <ul>
+                        <li tabindex="-1"><span>Any PC</span>
+                        </li>
+                        <li tabindex="-1"><span>Baking Kit: $450</span>
+                        </li>
+                        <li tabindex="-1"><span>Uniforms: $200</span>
+                        </li>
+                        <li tabindex="-1"><span>Black non-slip lace-up shoes: $50</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 pb-4 pl-2">
+            <ul class="nav nav-tabs ">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active tab-head" href="#">Program Information</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-4" id="checkout-tabs">
+                <div class="col-xs-6">
+                    <strong><span class="info-head">Degree Type: </span></strong> Associate of Applied Science Degree
+                    <hr>
+                    <strong><span class="info-head">Program Code: </span></strong> 10-314-2
+                    <hr>
+                    <strong><span class="info-head">Start Date: </span></strong> August
+                    <hr>
+                    <strong><span class="info-head">How You'll Learn </span></strong>
+                    <ul>
+                        <li>Hybrid</li>
+                        <li>Daytime</li>
+                        <li>Evening</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <div class="row mt-3 mr-0 ml-2">
+        <div class="col"></div>
+        <div class="col-lg-4">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0 tab-head">
+                            <button aria-controls="collapseOne" aria-expanded="true"
+                                    class="btn btn-link btn-block text-left tab-head card-head"
+                                    data-target="#collapseOne" data-toggle="collapse" type="button">
+                                Contact Us
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div aria-labelledby="headingOne" class="collapse show" data-parent="#accordionExample"
+                         id="collapseOne">
+                        <div class="card-body">
+                            <p><strong>Questions?</strong> We'd love to help! Connect with our Outreach team by filling
+                                out our <a href="https://wctc.edu//request-information/index.php"
+                                           title="Request Information">online form</a> or by
+                                email at <a href="mailto:outreach@wctc.edu"
+                                            title="outreach@wctc.edu">outreach@wctc.edu</a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button aria-controls="collapseTwo" aria-expanded="false"
+                                    class="btn btn-link btn-block  text-left tab-head card-head"
+                                    data-target="#collapseTwo" data-toggle="collapse"
+                                    type="button">
+                                Potential Careers
+                            </button>
+                        </h2>
+                    </div>
+                    <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionExample" id="collapseTwo">
+                        <div class="card-body">
+                            <p>If you are creative, patient and have a great deal of stamina, a career in baking
+                                and pastry production may be right for you. Bakers create new recipes and elaborate
+                                decorations for cakes and pastries, and the work they do requires a steady hand and
+                                many hours of standing. Additionally, much of their work is detail oriented, requiring
+                                a sharp focus and eye for detail.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button aria-controls="collapseThree"
+                                    aria-expanded="false"
+                                    class="btn btn-link btn-block  text-left tab-head card-head collapsed"
+                                    data-target="#collapseThree" data-toggle="collapse"
+                                    type="button">
+                                High School Eligibility
+                            </button>
+                        </h2>
+                    </div>
+                    <div aria-labelledby="headingThree" class="collapse" data-parent="#accordionExample"
+                         id="collapseThree">
+                        <div class="card-body">
+                            <p><span>This program is open to qualified high school applicants.&nbsp;</span><a
+                                    href="https://wctc.edu/academics/programs-courses/high-school-dual-credit/excelerate.php"
+                                    title="WCTC Excelerate"><span><strong>Learn more &gt;</strong></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="accordion" id="accordionExample2">
+                <div class="card">
+                    <div class="card-header" id="headingOne2">
+                        <h2 class="mb-0">
+                            <button aria-controls="collapseOne" aria-expanded="true"
+                                    class="btn btn-link btn-block  text-left tab-head card-head"
+                                    data-target="#collapseOne2" data-toggle="collapse" type="button">
+                                Career Salaries
+                            </button>
+                        </h2>
+                    </div>
+                    <div aria-labelledby="headingOne2" class="collapse show" data-parent="#accordionExample"
+                         id="collapseOne2">
+                        <div class="card-body">
+                            <p class="pagetext" tabindex="-1"><span>$22,100 - $32,200 annually</span></p>
+
+                            <p class="pagetext" tabindex="-1"><em tabindex="-1">Salary range estimates based on wages
+                                for related occupations in Waukesha County as
+                                reported by Economic Modeling Specialists International (EMSI). Individual wages may
+                                vary based on experience, industry, location and specific job requirements.</em></p>
+
+                            <p class="pagetext" tabindex="-1">Check the WCTC<span>&nbsp;</span>
+                                <a href="https://wctc.edu/_site-pdfs/graduate-success-reports/graduate-success-2020.pdf"
+                                   rel="noopener"
+                                   tabindex="-1"
+                                   target="_blank"
+                                   title="Graduate Success Report">Graduate
+                                    Success Report</a><span>&nbsp;</span>to view our graduates’ entry wages.
+                            </p></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo2">
+                        <h2 class="mb-0">
+                            <button aria-controls="collapseTwo"
+                                    aria-expanded="false"
+                                    class="btn btn-link btn-block  text-left tab-head card-head collapsed"
+                                    data-target="#collapseTwo2" data-toggle="collapse"
+                                    type="button">
+                                Financial Aid
+                            </button>
+                        </h2>
+                    </div>
+                    <div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionExample"
+                         id="collapseTwo2">
+                        <div class="card-body">
+                            <p>As a program student, you are eligible to receive:</p>
+                            <ul>
+                                <li class="pagetext">Financial aid loans</li>
+                                <li class="pagetext">Scholarships</li>
+                                <li class="pagetext">Other forms of assistance</li>
+                            </ul>
+
+                            <p>Learn more about<span>&nbsp;</span><a
+                                    href="https://wctc.edu/admissions-cost/tuition-aid/financial-aid.php"
+                                    title="financial aid">financial
+                                aid</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col hov1 m-5 animate__bounce">
+            <h1 class="animate__bounce hov-text">Program Courses</h1>
+        </div>
+        <div class="col hov2 m-5 animate__bounce">
+            <h1 class="hov-text">Program and Pathway PDF</h1>
+        </div>
+
+        <div class="col"></div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<!-- popper -->
+<script crossorigin="anonymous"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<!-- custom js-->
+<!-- custom js-->
+<script src="assets/dist/js/client.js"></script>
+</body>
+<footer class="row bg-primary footer">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col-lg-4">
+        <br><br>
+        <img src="assets/dist/images/waukesha_logo2.svg" width="200px"/>
+        <br><br>
+        <br>
+    </div>
+    <div class="col-lg-4">
+        <br>
+        <br>
+        <form>
+            <label class="" for="text1">
+                Name
+            </label>
+            <input id="text1" placeholder="Enter name here...." type="text"/>
+            <br>
+            <label class="" for="text2">
+                Email
+            </label>
+            <input id="text2" placeholder="name@email.com" type="email"/>
+            <br>
+            <label class="" for="text3">
+                Phone
+            </label>
+            <input id="text3" placeholder="(414)-867-5309" type="text"/>
+            <br>
+
+            <br>
+            <button class="btn btn-tertiary2"><a href="#">Request Info</a></button>
+            <br>
+            <br>
+            <br>
+            <br>
+        </form>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+</footer>
+</html>
