@@ -126,11 +126,19 @@
             <form>
                 <div class="tab-content" id="checkout-tabs">
                     <div aria-labelledby="billing-tab" class="tab-pane fade show active" id="billing" role="tabpanel">
-                        <div class="form-group">
-                            <label for="exampleInputName">Full Name</label>
-                            <input class="form-control" id="exampleInputName" name="fullname" placeholder="Enter your name and surname"
-                                   required="required" type="text">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label" for="inputCity">First Name</label>
+                                <input class="form-control" id="inputFirstName" name="firstname" placeholder="John"
+                                       type="text">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label" for="inputZip">Last Name</label>
+                                <input class="form-control" id="inputLastName" name="lastname" placeholder="Doe"
+                                       type="text">
+                            </div>
                         </div>
+                      
                         <div class="form-group">
                             <label for="exampleInputEmail1" required="required">Email address</label>
                             <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" name="email"
@@ -173,6 +181,7 @@
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
 
+                    <!--------------------------------------------------------------------------->
                     <div aria-labelledby="payment-tab" class="tab-pane fade" id="payment" role="tabpanel">
                         <h4 class="mb-3">Payment</h4>
                         asfsadfasd
