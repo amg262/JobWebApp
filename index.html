@@ -82,118 +82,256 @@
             mostly barebones HTML document.</p>
     </div>
 
-    <div class="container-sm">
-        <div class="col-md-7 offset-md-2 mt-5">
-            <!-- Tabs navs -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a aria-controls="billing" aria-selected="true" class="nav-link active" data-toggle="tab"
-                       href="#billing"
-                       id="billing-tab"
-                       role="tab">Billing</a>
-                </li>
-                <li class="nav-item">
-                    <a aria-controls="payment" aria-selected="false" class="nav-link" data-toggle="tab" href="#payment"
-                       id="payment-tab"
-                       role="tab">Payment</a>
-                </li>
-                <li class="nav-item">
-                    <a aria-controls="checkout" aria-selected="false" class="nav-link" data-toggle="tab"
-                       href="#checkout"
-                       id="checkout-tab"
-                       role="tab">Checkout</a>
-                </li>
-            </ul>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a data-toggle="tab" href="#hometab" role="tab">Home</a></li>
+        <li><a data-toggle="tab" href="#javatab" role="tab">Java</a></li>
+        <li><a data-toggle="tab" href="#csharptab" role="tab">C#</a></li>
+        <li><a data-toggle="tab" href="#mysqltab" role="tab">MySQL</a></li>
+        <li><a data-toggle="tab" href="#jquerytab" role="tab">jQuery</a></li>
 
-            <form>
-                <div class="tab-content mt-4" id="checkout-tabs">
-                    <div aria-labelledby="billing-tab" class="tab-pane fade show active" id="billing" role="tabpanel">
+    </ul>
+    </li>
 
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="hometab">Write something for home tab</div>
+        <div class="tab-pane" id="javatab">The Java is an object-oriented programming language <br/> that was developed
+            by James Gosling from the Sun Microsystems in 1995.
+        </div>
+        <div class="tab-pane" id="csharptab">C# is also a programming language</div>
+        <div class="tab-pane" id="mysqltab">MySQL is a databased mostly used for web applications.</div>
+        <div class="tab-pane" id="jquerytab">jQuery content here</div>
+        <div class="container-sm">
+            <div class="col-md-8 offset-md-2 mt-5">
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a aria-controls="personal" aria-selected="true" class="nav-link active" data-toggle="tab"
+                           href="#personal"
+                           id="personal-tab"
+                           role="tab">Personal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="background" aria-selected="false" class="nav-link" data-toggle="tab"
+                           href="#background"
+                           id="background-tab"
+                           role="tab">Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="education" aria-selected="false" class="nav-link" data-toggle="tab"
+                           href="#education"
+                           id="education-tab"
+                           role="tab">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="work" aria-selected="false" class="nav-link" data-toggle="tab" href="#work"
+                           id="work-tab"
+                           role="tab">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="reference" aria-selected="false" class="nav-link" data-toggle="tab"
+                           href="#reference"
+                           id="reference-tab"
+                           role="tab">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-controls="submit" aria-selected="false" class="nav-link" data-toggle="tab"
+                           href="#submit"
+                           id="submit-tab"
+                           role="tab">Submit</a>
+                    </li>
 
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label class="col-form-label" for="inputCity">First Name</label>
-                                <input class="form-control" id="inputFirstName" name="firstname" placeholder="John"
+                </ul>
+
+                <form>
+
+                    <div class="tab-content mt-4" id="personal">
+                        <div aria-labelledby="personal-tab" class="tab-pane fade show active" id="personal"
+                             role="tabpanel">
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label class="col-form-label" for="inputCity">First Name</label>
+                                    <input class="form-control" id="inputFirstName" name="firstname" placeholder="John"
+                                           type="text">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="col-form-label" for="inputZip">Last Name</label>
+                                    <input class="form-control" id="inputLastName" name="lastname" placeholder="Doe"
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label class="col-form-label" for="inputCity">Email address</label>
+                                    <input class="form-control" id="inputEmail" name="email"
+                                           placeholder="agunn1@my.wctc.edu"
+                                           type="email">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="col-form-label" for="inputZip">Phone</label>
+                                    <input class="form-control" id="inputPhone" name="phone"
+                                           placeholder="(262) 378-6200"
+                                           type="text">
+                                </div>
+                            </div>
+                            <!--                        <div class="form-group">-->
+                            <!--                            <label for="exampleInputEmail1" required="required" class="col-form-label">Email address</label>-->
+                            <!--                            <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1"-->
+                            <!--                                   name="email"-->
+                            <!--                                   placeholder="Enter your email address" type="email">-->
+                            <!--                        </div>-->
+                            <div class="form-group">
+                                <label class="col-form-label" for="inputAddress">Address</label>
+                                <input class="form-control" id="inputAddress" name="address" placeholder="1234 Main St"
                                        type="text">
                             </div>
-                            <div class="form-group col-md-6">
-                                <label class="col-form-label" for="inputZip">Last Name</label>
-                                <input class="form-control" id="inputLastName" name="lastname" placeholder="Doe"
-                                       type="text">
+                            <div class="form-row">
+                                <div class="form-group col-md-7">
+                                    <label class="col-form-label" for="inputCity">City</label>
+                                    <input class="form-control" id="inputCity" name="city" placeholder="Istanbul"
+                                           type="text">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label class="col-form-label" for="inputZip">Zip</label>
+                                    <input class="form-control" id="inputZip" name="zip" placeholder="34000"
+                                           type="text">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-8">
-                                <label class="col-form-label" for="inputCity">Email address</label>
-                                <input class="form-control" id="inputEmail" name="email"
-                                       placeholder="agunn1@my.wctc.edu"
-                                       type="email">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-form-label" for="inputZip">Phone</label>
-                                <input class="form-control" id="inputPhone" name="phone" placeholder="(262) 378-6200"
-                                       type="text">
-                            </div>
-                        </div>
-                        <!--                        <div class="form-group">-->
-                        <!--                            <label for="exampleInputEmail1" required="required" class="col-form-label">Email address</label>-->
-                        <!--                            <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1"-->
-                        <!--                                   name="email"-->
-                        <!--                                   placeholder="Enter your email address" type="email">-->
-                        <!--                        </div>-->
-                        <div class="form-group">
-                            <label class="col-form-label" for="inputAddress">Address</label>
-                            <input class="form-control" id="inputAddress" name="address" placeholder="1234 Main St"
-                                   type="text">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-7">
-                                <label class="col-form-label" for="inputCity">City</label>
-                                <input class="form-control" id="inputCity" name="city" placeholder="Istanbul"
-                                       type="text">
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label class="col-form-label" for="inputZip">Zip</label>
-                                <input class="form-control" id="inputZip" name="zip" placeholder="34000" type="text">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-5">
-                                <label class="col-form-label" for="inputAddress">Start Date</label>
-                                <input class="form-control" id="inputStartDate" name="startdate" type="date"
-                                       value="2020-02-01">
-                            </div>
-                            <div class="form-group col-md-5">
-                                <label class="col-form-label" for="inputAddress">Desired Salary</label>
-                                <input class="form-control" id="inputSalary" name="startdate" placeholder="50000"
-                                       type="number"
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label class="col-form-label" for="inputAddress">Start Date</label>
+                                    <input class="form-control" id="inputStartDate" name="startdate" type="date"
+                                           value="2020-02-01">
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label class="col-form-label" for="inputAddress">Desired Salary</label>
+                                    <input class="form-control" id="inputSalary" name="startdate" placeholder="50000"
+                                           type="number"
 
-                                       value="2020-02-01">
+                                           value="2020-02-01">
+                                </div>
+
                             </div>
 
+                            <!--                        <div class="form-group">-->
+                            <!--                            <label class="col-2 col-form-label" for="example-tel-input">Telephone</label>-->
+                            <!--                            <div class="col-10">-->
+                            <!--                                <input class="form-control" id="example-tel-input" name="tel" type="tel"-->
+                            <!--                                       value="1-(555)-555-5555">-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+
+                            <div class="form-group mt-4">
+                                <label class="mr-4">Upload your CV:</label>
+                                <input name="file" type="file">
+                            </div>
+                            <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
 
-                        <!--                        <div class="form-group">-->
-                        <!--                            <label class="col-2 col-form-label" for="example-tel-input">Telephone</label>-->
-                        <!--                            <div class="col-10">-->
-                        <!--                                <input class="form-control" id="example-tel-input" name="tel" type="tel"-->
-                        <!--                                       value="1-(555)-555-5555">-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-
-                        <div class="form-group mt-4">
-                            <label class="mr-4">Upload your CV:</label>
-                            <input name="file" type="file">
+                        <div aria-labelledby="payment-tab" class="tab-pane fade" id="payment" role="tabpanel">
+                            <h4 class="mb-3">Payment</h4>
+                            asfsadfasd
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit</button>
+
+                        <div class="tab-content mt-4" id="background-tabs">
+                            <div aria-labelledby="background-tab" class="tab-pane fade show active" id="background"
+                                 role="tabpanel">
+                                <h1>Background</h1>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="col-form-label" for="inputCity">First Name</label>
+                                        <input class="form-control" id="inputFirstName" name="firstname"
+                                               placeholder="John"
+                                               type="text">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="col-form-label" for="inputZip">Last Name</label>
+                                        <input class="form-control" id="inputLastName" name="lastname"
+                                               placeholder="Doe"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-8">
+                                        <label class="col-form-label" for="inputCity">Email address</label>
+                                        <input class="form-control" id="inputEmail" name="email"
+                                               placeholder="agunn1@my.wctc.edu"
+                                               type="email">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label class="col-form-label" for="inputZip">Phone</label>
+                                        <input class="form-control" id="inputPhone" name="phone"
+                                               placeholder="(262) 378-6200"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <!--                        <div class="form-group">-->
+                                <!--                            <label for="exampleInputEmail1" required="required" class="col-form-label">Email address</label>-->
+                                <!--                            <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1"-->
+                                <!--                                   name="email"-->
+                                <!--                                   placeholder="Enter your email address" type="email">-->
+                                <!--                        </div>-->
+                                <div class="form-group">
+                                    <label class="col-form-label" for="inputAddress">Address</label>
+                                    <input class="form-control" id="inputAddress" name="address"
+                                           placeholder="1234 Main St"
+                                           type="text">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-7">
+                                        <label class="col-form-label" for="inputCity">City</label>
+                                        <input class="form-control" id="inputCity" name="city"
+                                               placeholder="Istanbul"
+                                               type="text">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label class="col-form-label" for="inputZip">Zip</label>
+                                        <input class="form-control" id="inputZip" name="zip" placeholder="34000"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-5">
+                                        <label class="col-form-label" for="inputAddress">Start Date</label>
+                                        <input class="form-control" id="inputStartDate" name="startdate" type="date"
+                                               value="2020-02-01">
+                                    </div>
+                                    <div class="form-group col-md-5">
+                                        <label class="col-form-label" for="inputAddress">Desired Salary</label>
+                                        <input class="form-control" id="inputSalary" name="startdate"
+                                               placeholder="50000"
+                                               type="number"
+
+                                               value="2020-02-01">
+                                    </div>
+
+                                </div>
+
+                                <!--                        <div class="form-group">-->
+                                <!--                            <label class="col-2 col-form-label" for="example-tel-input">Telephone</label>-->
+                                <!--                            <div class="col-10">-->
+                                <!--                                <input class="form-control" id="example-tel-input" name="tel" type="tel"-->
+                                <!--                                       value="1-(555)-555-5555">-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+
+                                <div class="form-group mt-4">
+                                    <label class="mr-4">Upload your CV:</label>
+                                    <input name="file" type="file">
+                                </div>
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+
+                            <div aria-labelledby="payment-tab" class="tab-pane fade" id="payment" role="tabpanel">
+                                <h4 class="mb-3">Payment</h4>
+                                asfsadfasd
+                            </div>
+                        </div>
                     </div>
-
-                    <div aria-labelledby="payment-tab" class="tab-pane fade" id="payment" role="tabpanel">
-                        <h4 class="mb-3">Payment</h4>
-                        asfsadfasd
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </main><!-- /.container -->
