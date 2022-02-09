@@ -39,51 +39,52 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Job Application</a>
     <button aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler"
             data-target="#navbarsExampleDefault" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-                   id="dropdown01">Dropdown</a>
-                <div aria-labelledby="dropdown01" class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="text">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
+<!--    <div class="collapse navbar-collapse" id="navbarsExampleDefault">-->
+<!--        <ul class="navbar-nav mr-auto">-->
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#personal">Link</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link disabled">Disabled</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item dropdown">-->
+<!--                <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"-->
+<!--                   id="dropdown01">Dropdown</a>-->
+<!--                <div aria-labelledby="dropdown01" class="dropdown-menu">-->
+<!--                    <a class="dropdown-item" href="#">Action</a>-->
+<!--                    <a class="dropdown-item" href="#">Another action</a>-->
+<!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <form class="form-inline my-2 my-lg-0">-->
+<!--            <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="text">-->
+<!--            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>-->
+<!--        </form>-->
+<!--    </div>-->
 </nav>
 
 <main class="container" role="main">
 
     <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
-            mostly barebones HTML document.</p>
+        <h1>Job Application Form</h1>
+        <p class="lead">
+            I did the best I could with the time I had. I'm capable of and will do better, please go easy on me :(
+        </p>
     </div>
 
     <div class="container-sm">
-        <div class="col-md-7 offset-md-2 mt-5">
+        <div class="col-md-8 offset-2  mt-5">
             <!-- Tabs navs -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
@@ -126,6 +127,7 @@
             <form>
                 <div class="tab-content mt-3" id="checkout-tabs">
                     <div aria-labelledby="billing-tab" class="tab-pane fade show active" id="billing" role="tabpanel">
+                        <h4>Personal Information</h4>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label class="col-form-label" for="inputCity">First Name</label>
@@ -135,6 +137,14 @@
                             <div class="form-group col-md-6">
                                 <label class="col-form-label" for="inputZip">Last Name</label>
                                 <input class="form-control" id="inputLastName" name="lastname" placeholder="Doe"
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label" for="ssn">Social Security Number</label>
+                                <input class="form-control" id="ssn" name="ssn" placeholder="123456789"
                                        type="text">
                             </div>
                         </div>
@@ -161,12 +171,17 @@
                         <div class="form-row">
                             <div class="form-group col-md-7">
                                 <label class="col-form-label" for="inputCity">City</label>
-                                <input class="form-control" id="inputCity" name="city" placeholder="Istanbul"
+                                <input class="form-control" id="inputCity" name="city" placeholder="Mukwonago"
+                                       type="text">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label class="col-form-label" for="inputState2">State</label>
+                                <input class="form-control" id="inputState" name="zip" placeholder="WI"
                                        type="text">
                             </div>
                             <div class="form-group col-md-2">
                                 <label class="col-form-label" for="inputZip">Zip</label>
-                                <input class="form-control" id="inputZip" name="zip" placeholder="34000"
+                                <input class="form-control" id="inputZip" name="zip" placeholder="53149"
                                        type="text">
                             </div>
                         </div>
@@ -201,7 +216,6 @@
                                 <a class="btn btn-primary btnNext">Next</a>
                             </div>
                         </div>
-                        <hr>
 
 
                         <button class="btn btn-primary" type="submit">Submit</button>
@@ -351,8 +365,10 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <label class="col-form-label" for="convictText">If you answered yes to the above quest, explain</label>
-                                <input class="form-control" id="convictText" name="convictText" placeholder="Date, county, nature of the offense..."
+                                <label class="col-form-label" for="convictText">If you answered yes to the above quest,
+                                    explain</label>
+                                <input class="form-control" id="convictText" name="convictText"
+                                       placeholder="Date, county, nature of the offense..."
                                        type="text">
                             </div>
                         </div>
@@ -373,28 +389,246 @@
                     <!--------------------------------------------------------------------------->
 
 
-
                     <div aria-labelledby="checkout-tab" class="tab-pane fade" id="checkout" role="tabpanel">
                         <h4 class="mb-3">Education</h4>
 
+                        <div class="form-row" id="edu" style="">
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label" for="inputCity">School</label>
+                                <input class="form-control" id="schoolInput" name="firstname" placeholder="John"
+                                       type="text">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label class="col-form-label" for="enrolledInput">Enrolled</label>
+                                <input class="form-control" id="enrolledInput" name="enrolledInput" type="date"
+                                       value="2022-02-09">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label class="col-form-label" for="gradInput">Graduated</label>
+                                <input class="form-control" id="gradInput" name="gradInput" type="date"
+                                       value="2022-02-09">
+                            </div>
+                        </div>
+
+
+                        <div class="form-row" id="eduNext">
+                            <div class="form-group">
+
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn"><a class="btn btn-dark" href="#newRow" id="newRow">Add Row</a></button>
+                        </div>
+
+
+                        <div class="row mt-4">
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <a class="btn btn-secondary btnPrevious">Back</a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a class="btn btn-primary btnNext">Next</a>
+                            </div>
+                        </div>
+
                     </div>
-
-
 
 
                     <div aria-labelledby="work-tab" class="tab-pane fade" id="work" role="tabpanel">
                         <h4 class="mb-3">Work</h4>
-                        asfsadfasd
+
+
+                        <div id="job">
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label class="col-form-label" for="companyName">Company Name</label>
+                                    <input class="form-control" id="companyName" name="companyName"
+                                           placeholder="XYZ Company, LLC"
+                                           type="text">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="col-form-label" for="inputZip">Phone</label>
+                                    <input class="form-control" id="inputPhone" name="phone"
+                                           placeholder="(262) 378-6200"
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-7">
+                                    <label class="col-form-label" for="inputCity2">City</label>
+                                    <input class="form-control" id="inputCity2" name="inputCity2" placeholder="Waukesha"
+                                           type="text">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label class="col-form-label" for="inputState2">State</label>
+                                    <input class="form-control" id="inputState2" name="zip" placeholder="WI"
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label class="col-form-label" for="companyName4">Position Held</label>
+                                    <input class="form-control" id="companyName4" name="companyName4"
+                                           placeholder="Chief Executive Officer & Vice President"
+                                           type="text">
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label class="col-form-label" for="inputStartDate2">Start Date</label>
+                                    <input class="form-control" id="inputStartDate2" name="startdate" type="date"
+                                           value="2020-02-01">
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label class="col-form-label" for="inputStartDate3">End Date</label>
+                                    <input class="form-control" id="inputStartDate3" name="inputStartDate3" type="date"
+                                           value="2020-02-01">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Job Duties</label>
+                                    <textarea class="form-control" cols="90" id="exampleFormControlTextarea1"
+                                              rows="3"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        May we contact them?
+                                    </label>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="defaultCheck1" type="checkbox" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                        </div>
+
+                        <div class="form-row" id="jobNext">
+                            <div class="form-group">
+
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn"><a class="btn btn-dark" href="#newJob" id="newJob">Add Row</a></button>
+                        </div>
+
+
+                        <div class="row mt-4">
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <a class="btn btn-secondary btnPrevious">Back</a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a class="btn btn-primary btnNext">Next</a>
+                            </div>
+                        </div>
                     </div>
+
+
                     <div aria-labelledby="ref-tab" class="tab-pane fade" id="ref" role="tabpanel">
                         <h4 class="mb-3">References</h4>
                         asfsadfasd
+
+                        <div id="ref2">
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label class="col-form-label" for="refname">Reference Name</label>
+                                    <input class="form-control" id="refname" name="refname" placeholder="John"
+                                           type="text">
+                                </div>
+
+                            </div>
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-8">
+                                    <label class="col-form-label" for="relationship">Relationship</label>
+                                    <input class="form-control" id="relationship" name="relationship"
+                                           placeholder="Previous employer"
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                    <label class="col-form-label" for="inputEmail3">Email address</label>
+                                    <input class="form-control" id="inputEmail3" name="inputEmail3"
+                                           placeholder="agunn1@my.wctc.edu"
+                                           type="email">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label class="col-form-label" for="inputPhone3">Phone</label>
+                                    <input class="form-control" id="inputPhone3" name="inputPhone3"
+                                           placeholder="(262) 378-6200"
+                                           type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row" id="refNext">
+                            <div class="form-group">
+
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button class="btn"><a class="btn btn-dark" href="#newRef" id="newRef">Add Row</a></button>
+                        </div>
+
+
+                        <div class="row mt-4">
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <a class="btn btn-secondary btnPrevious">Back</a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a class="btn btn-primary btnNext">Next</a>
+                            </div>
+                        </div>
+
                     </div>
                     <div aria-labelledby="submit-tab" class="tab-pane fade" id="submit" role="tabpanel">
                         <h4 class="mb-3">Submit</h4>
-                        s
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                By completing and submitting an application, I certify that I am of legal contracting age and
+                                that I have read, understood and agree to all of the terms stated here.
+                                I represent that the information I provide will be true, accurate and complete
+                                <br><br>
+                                By submitting my application, I promise everything is truthful and correct
+<br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col-md-3">
+                                <button class="btn align-self-center"><a class="btn btn-lg btn-success" href="#submit">Submit</a></button>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
                     </div>
                 </div>
+                <hr>
+                <br>
+
             </form>
         </div>
     </div>
